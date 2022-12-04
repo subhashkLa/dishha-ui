@@ -1,3 +1,5 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
+
 import React, { useEffect, useState } from "react";
 import PortfolioCard from "../../components/portfolio";
 import SectionHeader from "../../components/section-header";
@@ -21,6 +23,7 @@ const Portfolio = (props) => {
 
   useEffect(() => {
     fetchDocuments();
+    // eslint-disable-next-line
   }, []);
 
   const fetchDocuments = async () => {

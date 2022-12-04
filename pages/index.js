@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -74,6 +75,7 @@ export default function Home() {
     fetchVideo();
     fetchGranths();
     fetchDocuments();
+    // eslint-disable-next-line
   }, []);
 
   const fetchGranths = async () => {
